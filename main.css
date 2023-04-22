@@ -40,7 +40,7 @@ main{
 }
 
 body {
-   background-color: whitesmoke;
+   background-color: rgb(183, 183, 183);
 }
 
 
@@ -181,7 +181,8 @@ section.info {
    grid-template-columns: 1fr 1fr 1fr;
    grid-row: 1fr 1fr;
    grid-gap: 2em;
-   margin-top: 1em;
+   margin-top: 1.5em;
+   margin-bottom: 3em;
 }
 
 .services-grid img {
@@ -193,6 +194,7 @@ section.info {
    font-size: 115%;
    color:rgb(18, 88, 36);
    border-bottom: 1px solid black;
+   margin-top: 1em;
 }
 
 @media (max-width: 899px) {
@@ -200,24 +202,26 @@ section.info {
    .wrapper{
        width: 100%;
        background-color: lightgrey;
-       border-radius: 0;
-       margin: 0;
+
    }
 
    header {
-      font-size: 190%;
+      font-size: 140%;
    }
 
    nav {
-      font-size:80%;
+      justify-content: space-between;
+      font-size:90%;
    }
 
    main {
-      font-size: 100%;
+      display: grid;
+      grid-template-columns: 1fr;
+      font-size: 110%;
    }
 
    main h2 {
-       font-size: 200%;
+       font-size: 100%;
    }
 
    img {
@@ -225,16 +229,17 @@ section.info {
       max-width: auto;
    }
 
-   .main {
-      grid-template-columns: 1fr; 
-      font-size: 150%;
-   }
-
-   .services-grid{
+   .services-grid {
       grid-template-columns: 1fr 1fr;
       font-size: 140%;
       justify-items: center;
       align-items: center;
    }
+
+   .services-grid h2 {
+      font-size: ;
+   }
+
+
 
 }
